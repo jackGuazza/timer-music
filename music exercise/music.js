@@ -1,6 +1,5 @@
 const playPauseButton = document.getElementById('play-pause-button');
 playPauseButton.innerHTML = '<i class="fas fa-play"></i>'; 
-const testoSong = document.getElementById('songTitle');
 const description = document.getElementById('description');
 const volumeIcon = document.getElementById('volume-icon');
 const volumeBar = document.querySelector('.volume-bar');
@@ -11,7 +10,7 @@ let prevVolume = 100;
 
 const songTitles = ["Killing in the Name", "Big Poppa", "Jamming"];
 const albumCovers = ["https://upload.wikimedia.org/wikipedia/it/f/ff/KillingInTheName.jpg", "https://cdn.themedizine.com/2015/03/throwbackthursday-notoriousbig-big-poppa.jpg", "https://i.ytimg.com/vi/_Mnohr5JYaI/maxresdefault.jpg"];
-const backgroundColors = ["linear-gradient(45deg, red, green)", "linear-gradient(45deg, orange, blue)", "linear-gradient(45deg, black, violet)"];
+const backgroundColors = ["linear-gradient(45deg, black, violet)", "linear-gradient(45deg, orange, blue)", "linear-gradient(45deg, red, green)"];
 
 let currentSongIndex = 0; 
 
