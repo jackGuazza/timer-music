@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="music.css">
+</head>
+
+
+<body>
+    
+
+    <div class="music-player">
+        <div class="background-overlay"></div> 
+        <div class="album-cover" id="album-cover"></div>
+            
+        <div class="song-info">
+            <h2 id="song-title"></h2>
+        </div>
+           
+        <input type="range" class="seek-bar" value="0">
+        
+        <div class="volume-controls">
+            <img src="https://icon-icons.com/icons2/510/PNG/512/volume-high_icon-icons.com_49962.png" alt="Volume" id="volume-icon">
+            <input type="range" class="volume-bar" value="100">
+        </div>
+
+        <div class="controls">
+            <button class="prev-track">&#171;</button>
+            <button class="play-pause" id="play-pause-button"></button>
+
+            <button class="next-track">&#187;</button>
+        </div>
+
+        <div class="container">
+            <div class="music-info">
+                <h2 id="songTitle">Song 1</h2>
+                <p id="description"></p>
+            </div>
+        </div>
+
+    </div>
+
+    
+
+    <script src="music.js"></script>
+
+</body>
+</html>

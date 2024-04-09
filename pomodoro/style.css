@@ -1,0 +1,119 @@
+body {
+  background-color:aqua;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  z-index: 2;
+  overflow: hidden;
+}
+
+
+#studyForm {
+  position: relative;
+  z-index: 10;
+  background: linear-gradient(to bottom right, #8b7997, #835353);
+  padding: 20px;
+  border-radius: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  margin-bottom: 20px;
+  text-align: center; 
+}
+
+#studyForm label {
+  font-family: "Lucida Console", "Courier New", monospace;
+  display: block;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+#studyForm input[type="number"] {
+  width: calc(100% - 30px);
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#studyForm button {
+  background-color: #ff0000;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; 
+}
+
+#studyForm button:hover {
+  background-color: #ff9900;
+}
+
+#studyForm button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+#studio-pausa {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  color: #aa3e3e;
+  margin-top: 20px; 
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #c0bbbb;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+
+#timerFinishedMessage {
+  animation: zoomInOut 3s infinite;
+}
+
+@keyframes fillBar {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+#clock {
+  font-family: "Lucida Console", "Courier New", monospace;
+  width: 600px;
+  height: 20px;
+  border: 2px solid #000;
+  position: relative;
+  bottom: 0%; 
+  border-radius: 10px; 
+}
+
+.timer {
+  font-size: 2em;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+
+.progress-bar {
+  height: 100%;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%; 
+  animation: none; 
+  border-radius: 10px;   
+}
+
+
+
